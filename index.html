@@ -4,13 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generation DigitalIA | Portafolio de Arte & Contenido Multimedia con IA</title>
+  <title>Generation DigitalIA | Portafolio de Arte, Video & Música con Inteligencia Artificial</title>
+
+  <!-- Políticas de Seguridad Web (CSP, Referrer, Anti-Sniffing) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https://res.cloudinary.com;
+    frame-src https://www.youtube.com https://w.soundcloud.com;
+    connect-src 'self';
+    base-uri 'self';
+    form-action 'self';
+  ">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <!-- SEO & Metadatos Esenciales -->
   <meta name="description"
-    content="Generation DigitalIA - Portafolio de arte generativo, producciones en video cinemático, composiciones acústicas sintéticas y contenido multimedia impulsado por inteligencia artificial.">
+    content="Generation DigitalIA - Laboratorio creativo de arte generativo, producciones cinematográficas en video, composiciones acústicas sintéticas y contenido multimedia impulsado por modelos de frontera con IA.">
   <meta name="keywords"
-    content="Inteligencia Artificial, Arte Generativo, Imagen 3, Runway, Kling, Suno, Video IA, Deep Tech, Prompt Engineering, Multimedia IA">
+    content="Inteligencia Artificial, Arte Generativo, Imagen 3, Veo 2, Lyria 3.5, Suno, Video IA, Deep Tech, Prompt Engineering, Multimedia IA, Creative AI Studio">
   <meta name="author" content="Generation DigitalIA">
   <meta name="theme-color" content="#070913">
 
@@ -18,9 +33,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Generation DigitalIA | Portafolio Multimedia con IA">
   <meta property="og:description"
-    content="Exploraciones visuales, composiciones sintéticas y contenido cinematográfico impulsado por inteligencia artificial de vanguardia.">
+    content="Exploraciones visuales, composiciones sintéticas y producciones cinematográficas impulsadas por inteligencia artificial de vanguardia.">
   <meta property="og:image"
-    content="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788475671/Gemini_Generated_Image_70rmd570rmd570rm.jpg">
+    content="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788486209/apple-smartwatch-minimalist-campaign-ad.jpg">
+  <meta property="og:url" content="https://generationdigitalia.github.io/portafolio/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +44,7 @@
   <meta name="twitter:description"
     content="Exploraciones visuales, composiciones sintéticas y contenido cinematográfico impulsado por modelos generativos.">
   <meta name="twitter:image"
-    content="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788475671/Gemini_Generated_Image_70rmd570rmd570rm.jpg">
+    content="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788486209/apple-smartwatch-minimalist-campaign-ad.jpg">
 
   <!-- Google Fonts: Outfit & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +58,23 @@
   <link rel="alternate icon" href="assets/favicon.svg">
   <link rel="apple-touch-icon" href="assets/favicon.svg">
 
+  <!-- Schema.org Datos Estructurados JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "name": "Generation DigitalIA Portfolio",
+    "author": {
+      "@type": "Organization",
+      "name": "Generation DigitalIA",
+      "url": "https://generationdigitalia.github.io/portafolio/"
+    },
+    "description": "Portafolio y laboratorio creativo de obras multimedia generadas con modelos de inteligencia artificial como Google Imagen 3, Veo 2 y Lyria 3.5.",
+    "genre": ["Generative Art", "AI Cinematography", "Synthetic Audio", "Commercial Design"],
+    "keywords": "AI, Generative Art, Video AI, Audio AI, Imagen 3, Veo 2, Lyria"
+  }
+  </script>
+
   <!-- Hoja de Estilos Principal -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -49,11 +82,11 @@
 <body>
 
   <!-- Barra de Navegación Superior -->
-  <header class="navbar">
+  <header class="navbar" role="banner">
     <div class="nav-container">
       <a href="#" class="nav-brand" title="Generation DigitalIA - Inicio">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
         </div>
@@ -65,26 +98,41 @@
         <span>AI Studio Activo</span>
       </div>
 
-      <nav>
+      <nav aria-label="Navegación principal">
         <ul class="nav-links">
           <li><a href="#galeria">Obras</a></li>
-          <li><a href="#metodologia">Metodología</a></li>
+          <li><a href="#pipeline">Pipeline</a></li>
+          <li><a href="#tech-radar">Modelos</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section Principal -->
-  <section class="hero">
+  <!-- Hero Section con Canvas Neural Interactivo -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <!-- Canvas de constelación neural interactiva -->
+    <canvas id="hero-particles" aria-hidden="true"></canvas>
+
     <div class="hero-pill">
-      <span>✦ Innovación Creativa & Síntesis Generativa</span>
+      <span>✦ Laboratorio Creativo & Síntesis Multimodal</span>
     </div>
-    <h1>Exploración Multimedia Impulsada por Inteligencia Artificial</h1>
+
+    <h1 id="hero-heading">Exploración Multimedia Impulsada por Inteligencia Artificial</h1>
     <p>
-      Producciones cinematográficas en video, arte visual hiperrealista y composiciones acústicas sintéticas
+      Producciones cinematográficas en video, diseño publicitario fotorrealista y composiciones acústicas sintéticas
       desarrolladas con modelos de frontera y refinamiento de prompts de alta fidelidad.
     </p>
+
+    <div class="hero-actions">
+      <a href="#galeria" class="btn-hero-primary">
+        <span>✦ Explorar Creaciones</span>
+      </a>
+      <a href="#pipeline" class="btn-hero-secondary">
+        <span>Arquitectura & Pipeline</span>
+      </a>
+    </div>
 
     <div class="hero-metrics">
       <div class="metric-item">
@@ -97,18 +145,22 @@
       </div>
       <div class="metric-item">
         <span class="metric-number">4K / Hi-Fi</span>
-        <span class="metric-label">Calidad de Salida</span>
+        <span class="metric-label">Calidad de Renderizado</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-number">0ms</span>
+        <span class="metric-label">CDN Cloud Caching</span>
       </div>
     </div>
   </section>
 
-  <!-- Contenedor Principal / Galería -->
+  <!-- Contenedor Principal / Galería Multimedia -->
   <main class="container" id="galeria">
 
     <!-- Barra de Controles: Filtros y Buscador en Tiempo Real -->
     <section class="controls-wrapper" aria-label="Controles del portafolio">
       <!-- Filtros por categoría -->
-      <div class="filter-group" role="tablist">
+      <div class="filter-group" role="tablist" aria-label="Filtrar creaciones por tipo">
         <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
           <span>✨ Todos</span>
           <span class="filter-count">0</span>
@@ -129,7 +181,7 @@
 
       <!-- Buscador en tiempo real -->
       <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
@@ -139,44 +191,143 @@
       </div>
     </section>
 
-    <!-- Indicador de resultados dinámicos -->
-    <div id="results-counter" class="results-info" aria-live="polite">
-      Mostrando creaciones...
+    <!-- Banner de Etiqueta Activa (Filtro por Tag) -->
+    <div id="active-tag-banner" class="active-tag-banner">
+      <div class="tag-banner-content">
+        <span>Filtrando por etiqueta:</span>
+        <span id="active-tag-name" class="active-tag-badge">#Tag</span>
+      </div>
+      <button id="clear-tag-btn" class="btn-clear-tag" title="Quitar filtro de etiqueta">✕ Quitar Etiqueta</button>
     </div>
 
-    <!-- Grid de Tarjetas Multimedia (Renderizado dinámico mediante app.js) -->
-    <section id="gallery-grid" class="gallery-grid" aria-label="Galería de creaciones">
-      <!-- Las tarjetas se inyectan automáticamente desde js/data.js -->
+    <!-- Indicador de resultados dinámicos -->
+    <div id="results-counter" class="results-info" aria-live="polite">
+      Cargando obras del portafolio...
+    </div>
+
+    <!-- Grid de Tarjetas Multimedia (Renderizado reactivo seguro mediante app.js) -->
+    <section id="gallery-grid" class="gallery-grid" aria-label="Galería de creaciones multimedia">
+      <!-- Tarjetas inyectadas de forma segura desde js/data.js -->
     </section>
 
   </main>
 
   <!-- Sección de Metodología y Pipeline Creativo -->
-  <section class="section-feature" id="metodologia">
+  <section class="section-feature" id="pipeline" aria-labelledby="pipeline-heading">
     <div class="feature-container">
       <span class="section-badge">Arquitectura de Creación</span>
-      <h2 class="section-heading">Pipeline Generativo de Alto Desempeño</h2>
+      <h2 class="section-heading" id="pipeline-heading">Pipeline Generativo de Alto Desempeño</h2>
 
       <div class="pipeline-grid">
         <div class="pipeline-card">
           <div class="pipeline-step">01</div>
-          <h4>Ingeniería de Prompts</h4>
-          <p>Estructuración semántica rigurosa, modulación de pesos estilísticos, iluminación volumétrica y parámetros
-            de cámara para máxima fidelidad.</p>
+          <h4>Ingeniería de Prompts Semántica</h4>
+          <p>Estructuración semántica rigurosa, modulación de pesos estilísticos, iluminación volumétrica y parámetros de cámara fotográfica real para máxima fidelidad.</p>
         </div>
 
         <div class="pipeline-card">
           <div class="pipeline-step">02</div>
-          <h4>Modelos de Frontera</h4>
-          <p>Integración de redes de difusión multimodal como Google Imagen 3, Google Veo 2.0, Lyria 3.5 y plataformas
-            de síntesis espectral de audio.</p>
+          <h4>Modelos de Frontera Multimodal</h4>
+          <p>Integración de redes de difusión multimodal como Google Imagen 3, Veo 2 y Lyria 3.5 para síntesis simultánea de imagen, video y audio espectral.</p>
         </div>
 
         <div class="pipeline-card">
           <div class="pipeline-step">03</div>
-          <h4>Post-Procesado & Upscaling</h4>
-          <p>Ajustes de color grading, masterización acústica a 48kHz / 24-bit y refinamiento de texturas para
-            presentación cinematográfica.</p>
+          <h4>Post-Procesado & Masterización</h4>
+          <p>Ajustes de color grading cinematográfico, masterización acústica a 48kHz / 24-bit y refinamiento de texturas fotorrealistas para presentación profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Tech Radar / Modelos Generativos -->
+  <section class="tech-radar-section" id="tech-radar" aria-labelledby="radar-heading">
+    <div class="feature-container">
+      <span class="section-badge">Tecnología de Vanguardia</span>
+      <h2 class="section-heading" id="radar-heading">Modelos Generativos & Especificaciones</h2>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <span class="tech-icon-badge tech-icon-image">Generación Visual</span>
+          <h4>Google Imagen 3</h4>
+          <p>Modelo de difusión de última generación optimizado para renderizado fotorrealista, texturas hiperdetalladas y tipografía nítida integrada en la composición.</p>
+          <ul class="tech-specs-list">
+            <li><span>Resolución:</span> Hasta 8K Ultra-Res</li>
+            <li><span>Capacidades:</span> Iluminación de estudio, tipografía nativa</li>
+            <li><span>Fidelidad:</span> Coherencia geométrica y materiales</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-icon-badge tech-icon-video">Cinematografía Sintética</span>
+          <h4>Google Veo 2</h4>
+          <p>Modelo de video generativo de alta definición con comprensión cinemática avanzada, consistencia temporal fluida y soporte para movimientos de cámara complejos.</p>
+          <ul class="tech-specs-list">
+            <li><span>Resolución:</span> 4K Ultra HD (2160p)</li>
+            <li><span>Control:</span> Estilos directores (Ghibli, Shinkai, Realismo)</li>
+            <li><span>Fluidez:</span> Estabilidad temporal multiframe</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <span class="tech-icon-badge tech-icon-audio">Síntesis Acústica</span>
+          <h4>Google Lyria 3.5</h4>
+          <p>Arquitectura neuronal para composición musical estéreo con control fino sobre géneros, BPM, capas rítmicas analógicas y rango dinámico Hi-Fi.</p>
+          <ul class="tech-specs-list">
+            <li><span>Muestreo:</span> 48kHz / 24-bit PCM</li>
+            <li><span>Estilos:</span> Boom Bap 90s, Hip-Hop, Acústico, Ambient</li>
+            <li><span>Estructura:</span> Rimas complejas y mezcla multipista</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Preguntas Frecuentes (FAQ Acordeón) -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="feature-container">
+      <span class="section-badge">Consultas y Respuestas</span>
+      <h2 class="section-heading" id="faq-heading" style="text-align: center;">Preguntas Frecuentes</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se garantiza la calidad y fidelidad de los prompts?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Cada obra pasa por iteraciones continuas de prompt engineering, combinando descriptores ópticos (aperturas f/1.8, distancias focales, lentes anamórficos), dirección de arte y composición fotográfica profesional para evitar alucinaciones visuales o artefactos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo reutilizar o copiar los prompts mostrados?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>¡Por supuesto! Cada tarjeta y la vista detallada en Lightbox incluyen un botón directo para copiar el prompt completo al portapapeles. Te invitamos a probarlos y experimentar en tus propias herramientas de IA.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se procesan y optimizan los archivos multimedia?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Las imágenes se procesan y distribuyen a través de Cloudinary CDN en formatos de nueva generación (WebP/AVIF), mientras que los videos se alojan en streaming adaptativo en YouTube y el audio se entrega en alta fidelidad mediante SoundCloud.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Aceptan proyectos comerciales o colaboraciones creativas?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí. Desarrollamos campañas visuales para marcas, producción cinematográfica con IA, diseño publicitario de productos y diseño de sonido experimental. Puedes ponerte en contacto a través de nuestros canales oficiales en el pie de página.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -187,18 +338,18 @@
     <div class="footer-container">
       <div class="footer-info">
         <h3>Generation DigitalIA</h3>
-        <p>Laboratorio creativo experimental enfocado en la convergencia de modelos de inteligencia artificial y
-          narrativas audiovisuales de nueva generación.</p>
+        <p>Laboratorio creativo experimental enfocado en la convergencia de modelos de inteligencia artificial multimodal y narrativas audiovisuales de nueva generación.</p>
       </div>
 
       <div class="footer-socials">
-        <a href="https://soundcloud.com/generationdigitalia" target="_blank" rel="noopener noreferrer"
-          class="social-btn">
-          <span>🎵 SoundCloud</span>
+        <a href="https://soundcloud.com/generationdigitalia" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>🎵 SoundCloud Oficial</span>
         </a>
-        <a href="https://www.youtube.com/@generationdigitalia" target="_blank" rel="noopener noreferrer"
-          class="social-btn">
-          <span>▶ YouTube</span>
+        <a href="https://www.youtube.com/@generationdigitalia" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>▶ Canal YouTube</span>
+        </a>
+        <a href="https://github.com/GenerationDigitalIA/portafolio" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>🐙 Repositorio GitHub</span>
         </a>
         <a href="mailto:contacto@generationdigitalia.com" class="social-btn">
           <span>✉ Contactar</span>
@@ -207,26 +358,30 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2026 Generation DigitalIA. Todos los derechos reservados. Diseñado para rendimiento y escalabilidad
-        fluida.</p>
+      <p>&copy; 2026 Generation DigitalIA. Todos los derechos reservados. Desarrollado con HTML5, CSS3 nativo y JavaScript seguro.</p>
     </div>
   </footer>
 
-  <!-- Modal / Lightbox Cinematográfico para Imágenes -->
+  <!-- Modal / Lightbox Cinematográfico para Imágenes con Navegación -->
   <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true"
     aria-label="Visualizador de Imagen en Pantalla Completa">
     <div class="lightbox-content">
-      <button id="lightbox-close" class="lightbox-close" title="Cerrar modal (Esc)" aria-label="Cerrar">✕</button>
+      <button id="lightbox-close" class="lightbox-close" title="Cerrar modal (Esc)" aria-label="Cerrar modal">✕</button>
 
       <div class="lightbox-media-container">
-        <img id="lightbox-image" src="" alt="Vista en detalle" />
+        <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev" title="Obra anterior (Flecha izquierda)" aria-label="Obra anterior">❮</button>
+        <img id="lightbox-image" src="" alt="Vista en detalle de la obra" />
+        <button id="lightbox-next" class="lightbox-nav-btn lightbox-next" title="Obra siguiente (Flecha derecha)" aria-label="Obra siguiente">❯</button>
+        <span id="lightbox-counter" class="lightbox-counter">1 / 3</span>
       </div>
 
       <div class="lightbox-details">
         <h3 id="lightbox-title" class="lightbox-title">Título de la Obra</h3>
         <div class="lightbox-meta">
-          <span class="badge badge-image">Imagen IA</span>
-          <span id="lightbox-model" class="badge badge-model">Modelo IA</span>
+          <span class="badge badge-image">🖼️ Imagen IA</span>
+          <span id="lightbox-model" class="badge badge-model">Google Imagen 3</span>
+          <span id="lightbox-category" class="badge badge-video">Categoría</span>
+          <span id="lightbox-resolution" class="badge badge-resolution">8K Ultra-Res</span>
         </div>
 
         <div class="lightbox-prompt-box">
@@ -246,17 +401,17 @@
     </div>
   </div>
 
-  <!-- Notificación Toast Flotante para Copiado -->
+  <!-- Notificación Toast Flotante Dinámica -->
   <div id="toast" class="toast-notification" role="status" aria-live="polite">
     <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
       <polyline points="20 6 9 17 4 12"></polyline>
     </svg>
-    <span>¡Prompt copiado al portapapeles con éxito!</span>
+    <span id="toast-text">¡Prompt copiado al portapapeles con éxito!</span>
   </div>
 
   <!-- Botón Volver Arriba Flotante -->
-  <button id="scroll-top-btn" class="scroll-top-btn" title="Volver al inicio" aria-label="Volver al inicio">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+  <button id="scroll-top-btn" class="scroll-top-btn" title="Volver al inicio" aria-label="Volver al inicio de la página">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>

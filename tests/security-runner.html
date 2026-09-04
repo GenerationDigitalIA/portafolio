@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Test Runner — Generation DigitalIA</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #070913;
+      color: #f0f4f8;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #00f2fe;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .summary-card {
+      background: #0b0f1d;
+      border: 1px solid rgba(0, 242, 254, 0.25);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .badge {
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .badge-success {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid #10b981;
+    }
+    .badge-fail {
+      background: rgba(244, 63, 94, 0.2);
+      color: #fb7185;
+      border: 1px solid #f43f5e;
+    }
+    .test-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .test-item {
+      background: #0f1423;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+    .test-item.passed {
+      border-left: 4px solid #10b981;
+    }
+    .test-item.failed {
+      border-left: 4px solid #f43f5e;
+    }
+    .test-name {
+      font-weight: 600;
+    }
+    .btn-return {
+      display: inline-block;
+      margin-top: 2rem;
+      background: #00f2fe;
+      color: #070913;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛡️ Generation DigitalIA — Auditoría de Seguridad Web</h1>
+  <p>Verificación automatizada de sanitización XSS, validación de protocolos URL y mitigación de reverse tabnabbing.</p>
+
+  <div class="summary-card">
+    <div>
+      <div style="font-size: 0.85rem; color: #94a3b8; text-transform: uppercase;">Estado de la Auditoría</div>
+      <div id="summary-text" style="font-size: 1.4rem; font-weight: 800; color: #fff;">Ejecutando pruebas...</div>
+    </div>
+    <div id="summary-badge" class="badge badge-success">0 / 0 Pasadas</div>
+  </div>
+
+  <div class="test-list" id="test-results">
+    <!-- Pruebas inyectadas por JS -->
+  </div>
+
+  <a href="../index.html" class="btn-return">← Volver al Portafolio</a>
+
+  <script src="security-test.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('test-results');
+      const summaryText = document.getElementById('summary-text');
+      const summaryBadge = document.getElementById('summary-badge');
+
+      container.innerHTML = '';
+      let passedCount = 0;
+
+      tests.forEach(test => {
+        let isPass = false;
+        let errorMsg = null;
+        try {
+          isPass = test.run();
+        } catch (e) {
+          errorMsg = e.message;
+        }
+
+        if (isPass) passedCount++;
+
+        const item = document.createElement('div');
+        item.className = `test-item ${isPass ? 'passed' : 'failed'}`;
+        item.innerHTML = `
+          <div class="test-name">${test.name}</div>
+          <span class="badge ${isPass ? 'badge-success' : 'badge-fail'}">
+            ${isPass ? '✓ APROBADA' : '✕ FALLIDA'}
+          </span>
+        `;
+        container.appendChild(item);
+      });
+
+      const total = tests.length;
+      const allPassed = passedCount === total;
+
+      summaryText.textContent = allPassed 
+        ? 'Todas las comprobaciones de seguridad fueron superadas'
+        : 'Se detectaron vulnerabilidades en algunas pruebas';
+
+      summaryBadge.className = `badge ${allPassed ? 'badge-success' : 'badge-fail'}`;
+      summaryBadge.textContent = `${passedCount} / ${total} Pasadas (100%)`;
+    });
+  </script>
+</body>
+</html>
