@@ -60,6 +60,16 @@ const portfolioItems = [
     tags: ["Pixel Art", "Animación 2D", "Motivación", "Retro Gaming"]
   },
   {
+    id: "vid-2",
+    type: "video",
+    title: "El Viaje de la Vida: De Niño Soñador a Anciano Sabio",
+    description: "Cortometraje animado estilo Studio Ghibli sobre el paso del tiempo, el crecimiento personal y la serenidad de alcanzar la cima.",
+    mediaUrl: "https://www.youtube.com/embed/MMC4ZaG4ttU",
+    prompt: "Cinematic anime style, Makoto Shinkai and Studio Ghibli aesthetic. A boy running happily in a spring forest grows into a determined youth climbing cliffs, then an adult running through ancient ruins in the rain, finally reaching old age as a wise bearded wanderer standing peacefully on a snowy mountain summit at sunrise, high emotional resonance, painterly lighting.",
+    model: "Google Veo 2",
+    tags: ["Anime", "Studio Ghibli", "Reflexión", "Animación 2D", "Filosofía"]
+  },
+  {
     id: "aud-1",
     type: "audio",
     title: "Pavement Throne",
