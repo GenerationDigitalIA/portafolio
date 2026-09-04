@@ -4,249 +4,247 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generation DigitalIA | Portafolio</title>
+  <title>Generation DigitalIA | Portafolio de Arte & Contenido Multimedia con IA</title>
+  
+  <!-- SEO & Metadatos Esenciales -->
+  <meta name="description" content="Generation DigitalIA - Portafolio de arte generativo, producciones en video cinemático, composiciones acústicas sintéticas y contenido multimedia impulsado por inteligencia artificial.">
+  <meta name="keywords" content="Inteligencia Artificial, Arte Generativo, Imagen 3, Runway, Kling, Suno, Video IA, Deep Tech, Prompt Engineering, Multimedia IA">
+  <meta name="author" content="Generation DigitalIA">
+  <meta name="theme-color" content="#070913">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Generation DigitalIA | Portafolio Multimedia con IA">
+  <meta property="og:description" content="Exploraciones visuales, composiciones sintéticas y contenido cinematográfico impulsado por inteligencia artificial de vanguardia.">
+  <meta property="og:image" content="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788475671/Gemini_Generated_Image_70rmd570rmd570rm.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Generation DigitalIA | Portafolio Multimedia con IA">
+  <meta name="twitter:description" content="Exploraciones visuales, composiciones sintéticas y contenido cinematográfico impulsado por modelos generativos.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788475671/Gemini_Generated_Image_70rmd570rmd570rm.jpg">
+
+  <!-- Google Fonts: Outfit & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-dark: #070913;
-      --card-bg: #0f1423;
-      --border-glow: rgba(0, 242, 254, 0.2);
-      --cyan: #00f2fe;
-      --purple: #9b51e0;
-      --text-main: #f0f4f8;
-      --text-muted: #8a99ad;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      padding-bottom: 4rem;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 1.5rem 2rem;
-      background: radial-gradient(circle at top, rgba(0, 242, 254, 0.15), transparent 70%);
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      background: linear-gradient(90deg, var(--cyan), var(--purple));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    .section-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin: 3rem 0 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      border-left: 4px solid var(--cyan);
-      padding-left: 0.8rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--border-glow);
-      border-radius: 12px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--cyan);
-    }
-
-    /* Galería de Imágenes */
-    .image-card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-body {
-      padding: 1.2rem;
-    }
-
-    .card-body h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .card-body p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    /* Marcos de Video */
-    .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* Reproductores de Audio */
-    .audio-card {
-      padding: 1.2rem;
-    }
-
-    .audio-wrapper {
-      margin-top: 1rem;
-    }
-
-    .audio-wrapper iframe {
-      width: 100%;
-      height: 120px;
-      border: 0;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 1rem;
-      filter: invert(0.9) hue-rotate(180deg);
-    }
-  </style>
+  <!-- Hoja de Estilos Principal -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Generation DigitalIA</h1>
-    <p>Exploraciones visuales, composiciones sintéticas y contenido multimedia impulsado por inteligencia artificial.
-    </p>
+  <!-- Barra de Navegación Superior -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" title="Generation DigitalIA - Inicio">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <span>Generation DigitalIA</span>
+      </a>
+
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span>AI Studio Activo</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#galeria">Obras</a></li>
+          <li><a href="#metodologia">Metodología</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
+  <!-- Hero Section Principal -->
+  <section class="hero">
+    <div class="hero-pill">
+      <span>✦ Innovación Creativa & Síntesis Generativa</span>
+    </div>
+    <h1>Exploración Multimedia Impulsada por Inteligencia Artificial</h1>
+    <p>
+      Producciones cinematográficas en video, arte visual hiperrealista y composiciones acústicas sintéticas
+      desarrolladas con modelos de frontera y refinamiento de prompts de alta fidelidad.
+    </p>
 
-    <h2 class="section-title">Producciones en Video</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video IA 1" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h3>Evolución Sintética</h3>
-          <p>Animación y renderizado cinemático creado con modelos de difusión de video.</p>
-        </div>
+    <div class="hero-metrics">
+      <div class="metric-item">
+        <span class="metric-number">3</span>
+        <span class="metric-label">Disciplinas (Video, Imagen, Audio)</span>
       </div>
-
-      <div class="card">
-        <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video IA 2" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h3>Metrópolis Cuántica</h3>
-          <p>Exploración de conceptos de ciencia ficción asistidos por redes generativas.</p>
-        </div>
+      <div class="metric-item">
+        <span class="metric-number">100%</span>
+        <span class="metric-label">Síntesis Generativa</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-number">4K / Hi-Fi</span>
+        <span class="metric-label">Calidad de Salida</span>
       </div>
     </div>
+  </section>
 
-    <h2 class="section-title">Galería de Imágenes</h2>
-    <div class="grid">
-      <div class="card image-card">
-        <img
-          src="https://res.cloudinary.com/hmmpgzoa/image/upload/v1788475671/Gemini_Generated_Image_70rmd570rmd570rm.jpg">
-        <div class="card-body">
-          <h3>El Espíritu del Viaje Americano</h3>
-          <p>Prompt: Un primer plano dinámico y cinematográfico de un Golden Retriever feliz y con el pelaje alborotado,
-            sacando
-            la lengua con alegría por la ventana abierta de un SUV en movimiento. La perspectiva es desde el exterior,
-            mirando hacia atrás, capturando la sensación de velocidad con un desenfoque de movimiento en la carretera
-            interestatal estadounidense. En primer plano, en el tablero, se ve un atlas de carreteras vintage y un par
-            de gafas de sol con una bandera de EE.UU. Al fondo, un paisaje desértico vasto del suroeste bajo un cielo
-            azul con nubes y una señal de tráfico real que dice 'WELCOME TO THE USA' y 'INTERSTATE 15 NORTH'.
-            Iluminación solar natural, colores saturados, grano de película fotográfica, 8k.</p>
-        </div>
+  <!-- Contenedor Principal / Galería -->
+  <main class="container" id="galeria">
+
+    <!-- Barra de Controles: Filtros y Buscador en Tiempo Real -->
+    <section class="controls-wrapper" aria-label="Controles del portafolio">
+      <!-- Filtros por categoría -->
+      <div class="filter-group" role="tablist">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <span>✨ Todos</span>
+          <span class="filter-count">0</span>
+        </button>
+        <button class="filter-btn" data-filter="image" role="tab" aria-selected="false">
+          <span>🖼️ Imágenes</span>
+          <span class="filter-count">0</span>
+        </button>
+        <button class="filter-btn" data-filter="video" role="tab" aria-selected="false">
+          <span>🎬 Videos</span>
+          <span class="filter-count">0</span>
+        </button>
+        <button class="filter-btn" data-filter="audio" role="tab" aria-selected="false">
+          <span>🎵 Audio</span>
+          <span class="filter-count">0</span>
+        </button>
       </div>
 
-      <div class="card image-card">
-        <img src="https://picsum.photos/600/400?random=2" alt="Arte Conceptual IA 2">
-        <div class="card-body">
-          <h3>Ciudad Neón</h3>
-          <p>Prompt: Hyperrealistic neon-lit skyline at twilight.</p>
-        </div>
+      <!-- Buscador en tiempo real -->
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Buscar por prompt, estilo, modelo o etiqueta..."
+          aria-label="Buscar en el portafolio"
+        />
+        <button id="search-clear" class="search-clear" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">✕</button>
       </div>
+    </section>
 
-      <div class="card image-card">
-        <img src="https://picsum.photos/600/400?random=3" alt="Arte Conceptual IA 3">
-        <div class="card-body">
-          <h3>Entidad Digital</h3>
-          <p>Prompt: Holographic avatar floating in zero gravity.</p>
-        </div>
-      </div>
+    <!-- Indicador de resultados dinámicos -->
+    <div id="results-counter" class="results-info" aria-live="polite">
+      Mostrando creaciones...
     </div>
 
-    <h2 class="section-title">Composiciones de Audio</h2>
-    <div class="grid">
-      <div class="card audio-card">
-        <h3>Cyber Pulse (SoundCloud)</h3>
-        <p>Generación instrumental de synthwave ambiental.</p>
-        <div class="audio-wrapper">
-          <iframe scrolling="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%2300f2fe&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-        </div>
-      </div>
-
-      <div class="card audio-card">
-        <h3>Neural Echoes (Direct MP3)</h3>
-        <p>Pista generada para banda sonora de fondo.</p>
-        <audio controls>
-          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-          Tu navegador no soporta el reproductor de audio.
-        </audio>
-      </div>
-    </div>
+    <!-- Grid de Tarjetas Multimedia (Renderizado dinámico mediante app.js) -->
+    <section id="gallery-grid" class="gallery-grid" aria-label="Galería de creaciones">
+      <!-- Las tarjetas se inyectan automáticamente desde js/data.js -->
+    </section>
 
   </main>
 
+  <!-- Sección de Metodología y Pipeline Creativo -->
+  <section class="section-feature" id="metodologia">
+    <div class="feature-container">
+      <span class="section-badge">Arquitectura de Creación</span>
+      <h2 class="section-heading">Pipeline Generativo de Alto Desempeño</h2>
+
+      <div class="pipeline-grid">
+        <div class="pipeline-card">
+          <div class="pipeline-step">01</div>
+          <h4>Ingeniería de Prompts</h4>
+          <p>Estructuración semántica rigurosa, modulación de pesos estilísticos, iluminación volumétrica y parámetros de cámara para máxima fidelidad.</p>
+        </div>
+
+        <div class="pipeline-card">
+          <div class="pipeline-step">02</div>
+          <h4>Modelos de Frontera</h4>
+          <p>Integración de redes de difusión multimodal como Google Imagen 3, Runway Gen-3, Kling AI y plataformas de síntesis espectral de audio.</p>
+        </div>
+
+        <div class="pipeline-card">
+          <div class="pipeline-step">03</div>
+          <h4>Post-Procesado & Upscaling</h4>
+          <p>Ajustes de color grading, masterización acústica a 48kHz / 24-bit y refinamiento de texturas para presentación cinematográfica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página (Footer) -->
+  <footer id="contacto">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Generation DigitalIA</h3>
+        <p>Laboratorio creativo experimental enfocado en la convergencia de modelos de inteligencia artificial y narrativas audiovisuales de nueva generación.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://soundcloud.com/generationdigitalia" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>🎵 SoundCloud</span>
+        </a>
+        <a href="https://www.youtube.com/@generationdigitalia" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>▶ YouTube</span>
+        </a>
+        <a href="mailto:contacto@generationdigitalia.com" class="social-btn">
+          <span>✉ Contactar</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Generation DigitalIA. Todos los derechos reservados. Diseñado para rendimiento y escalabilidad fluida.</p>
+    </div>
+  </footer>
+
+  <!-- Modal / Lightbox Cinematográfico para Imágenes -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visualizador de Imagen en Pantalla Completa">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close" title="Cerrar modal (Esc)" aria-label="Cerrar">✕</button>
+      
+      <div class="lightbox-media-container">
+        <img id="lightbox-image" src="" alt="Vista en detalle" />
+      </div>
+
+      <div class="lightbox-details">
+        <h3 id="lightbox-title" class="lightbox-title">Título de la Obra</h3>
+        <div class="lightbox-meta">
+          <span class="badge badge-image">Imagen IA</span>
+          <span id="lightbox-model" class="badge badge-model">Modelo IA</span>
+        </div>
+        
+        <div class="lightbox-prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Prompt Completo Utilizado:</span>
+            <button id="lightbox-copy-btn" class="btn-copy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Prompt
+            </button>
+          </div>
+          <p id="lightbox-prompt"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notificación Toast Flotante para Copiado -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>¡Prompt copiado al portapapeles con éxito!</span>
+  </div>
+
+  <!-- Botón Volver Arriba Flotante -->
+  <button id="scroll-top-btn" class="scroll-top-btn" title="Volver al inicio" aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Lógica y Catálogo de Datos Modular -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
