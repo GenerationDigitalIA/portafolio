@@ -64,7 +64,7 @@ const portfolioItems = [
     type: "video",
     title: "El Viaje de la Vida: De Niño Soñador a Anciano Sabio",
     description: "Cortometraje animado estilo Studio Ghibli sobre el paso del tiempo, el crecimiento personal y la serenidad de alcanzar la cima.",
-    mediaUrl: "https://www.youtube.com/embed/MMC4ZaG4ttU",
+    mediaUrl: "https://www.youtube.com/embed/x3AxtZ2BaHE",
     prompt: "Cinematic anime style, Makoto Shinkai and Studio Ghibli aesthetic. A boy running happily in a spring forest grows into a determined youth climbing cliffs, then an adult running through ancient ruins in the rain, finally reaching old age as a wise bearded wanderer standing peacefully on a snowy mountain summit at sunrise, high emotional resonance, painterly lighting.",
     model: "Google Veo 2",
     tags: ["Anime", "Studio Ghibli", "Reflexión", "Animación 2D", "Filosofía"]
