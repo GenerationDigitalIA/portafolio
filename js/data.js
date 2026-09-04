@@ -86,7 +86,7 @@ const portfolioItems = [
     type: "audio",
     title: "90s Boom Bap Rap Battle",
     description: "Auténtico duelo lírico de rap battle underground al más puro estilo boom bap de los 90 a 92 BPM. Cuenta con un groove contundente, batería con pegada dura, scratches de vinilo sucios, una línea de bajo oscura y amenazante, y metales triunfantes que elevan la tensión del cypher. El tema presenta un enfrentamiento vocal feroz, rápido y desafiante con métricas afiladas y rimas multisilábicas.",
-    mediaUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2394131871&color=%2300f2fe&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    mediaUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2394179835&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     externalUrl: "https://soundcloud.com/generationdigitalia/90s-boom-bap-rap-battle",
     author: "Generation DigitalIA",
     prompt: "Boom bap rap battle, 90s hip-hop, aggressive and fast lyrical flow, hard-hitting 808 drums, gritty vinyl scratch, menacing bassline, triumphant brass section, underground cypher vibe, 92 BPM, raw male vocals, energetic, motivational yet fierce, defiant.",
