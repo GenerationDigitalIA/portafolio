@@ -80,5 +80,17 @@ const portfolioItems = [
     prompt: "An aggressive 90s East Coast boom bap rap battle track, 92 BPM, heavy punchy kick and snare, gritty vinyl scratches, dramatic minor-key piano loop, deep baseline. Intense, hungry, competitive male flow with complex rhyme schemes. Lyrical theme: overcoming poverty, self-reliance, grinding from zero to success, defying the odds in the cipher.",
     model: "Lyria 3.5 / Street Level Logic (Album)",
     tags: ["Rap Battle", "90s Hip Hop", "East Coast", "Boom Bap", "Gritty", "Hardcore", "Poverty to Success"]
+  },
+  {
+    id: "aud-2",
+    type: "audio",
+    title: "90s Boom Bap Rap Battle",
+    description: "Auténtico duelo lírico de rap battle underground al más puro estilo boom bap de los 90 a 92 BPM. Cuenta con un groove contundente, batería con pegada dura, scratches de vinilo sucios, una línea de bajo oscura y amenazante, y metales triunfantes que elevan la tensión del cypher. El tema presenta un enfrentamiento vocal feroz, rápido y desafiante con métricas afiladas y rimas multisilábicas.",
+    mediaUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2394131871&color=%2300f2fe&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    externalUrl: "https://soundcloud.com/generationdigitalia/90s-boom-bap-rap-battle",
+    author: "Generation DigitalIA",
+    prompt: "Boom bap rap battle, 90s hip-hop, aggressive and fast lyrical flow, hard-hitting 808 drums, gritty vinyl scratch, menacing bassline, triumphant brass section, underground cypher vibe, 92 BPM, raw male vocals, energetic, motivational yet fierce, defiant.",
+    model: "Lyria 3.5 / Lyria (Concrete Cypher)",
+    tags: ["Boom Bap", "90s Hip Hop", "Rap Battle", "East Coast", "Underground Cypher", "Hardcore Hip Hop", "Vinyl Scratches", "92 BPM"]
   }
 ];
