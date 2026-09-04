@@ -51,6 +51,16 @@ const portfolioItems = [
     tags: ["Espacio", "Astronomía", "Ciencia Ficción", "8K"]
   },
   {
+    id: "img-4",
+    type: "image",
+    title: "Campaña Publicitaria Minimalista del Apple Watch",
+    description: "Una fotografía publicitaria minimalista y de alta gama en estudio que presenta un Apple Watch gigante en posición vertical sobre un suelo brillante y reflectante. Una joven mujer con una sudadera y pantalones de chándal blancos impecables se recuesta casualmente contra el gran reloj con los ojos cerrados. Fondo azul degradado suave con tipografía blanca grande y llamativa detrás. Iluminación de estudio moderna, estética ultra limpia, alta resolución.",
+    mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788483742/Gemini_Generated_Image_8temj48temj48tem.jpg",
+    prompt: "Commercial ad photography, an oversized white smartwatch standing upright on a glossy reflective studio floor. A young woman in a clean white hoodie and joggers leans casually against the giant watch with eyes closed. Soft gradient blue background, large bold white typography behind. Modern studio lighting, ultra-clean aesthetic, high resolution.",
+    model: "Google Imagen 3",
+    tags: ["Publicidad", "Minimalista", "Apple Watch", "Moda", "Estudio", "Fotografía"]
+  },
+  {
     id: "vid-1",
     type: "video",
     title: "Del Fracaso al Éxito: La Regla de los Ganadores",
