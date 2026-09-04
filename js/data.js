@@ -53,6 +53,16 @@ const portfolioItems = [
   {
     id: "img-4",
     type: "image",
+    title: "Campaña Publicitaria Minimalista del Apple Watch",
+    description: "Una fotografía publicitaria minimalista y de alta gama en estudio que presenta un Apple Watch gigante en posición vertical sobre un suelo brillante y reflectante. Una joven mujer con una sudadera y pantalones de chándal blancos impecables se recuesta casualmente contra el gran reloj con los ojos cerrados. Fondo azul degradado suave con tipografía blanca grande y llamativa detrás. Iluminación de estudio moderna, estética ultra limpia, alta resolución.",
+    mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788483742/Gemini_Generated_Image_8temj48temj48tem.jpg",
+    prompt: "Commercial ad photography, an oversized white smartwatch standing upright on a glossy reflective studio floor. A young woman in a clean white hoodie and joggers leans casually against the giant watch with eyes closed. Soft gradient blue background, large bold white typography behind. Modern studio lighting, ultra-clean aesthetic, high resolution.",
+    model: "Google Imagen 3",
+    tags: ["Publicidad", "Minimalista", "Apple Watch", "Moda", "Estudio", "Fotografía"]
+  },
+  {
+    id: "img-5",
+    type: "image",
     title: "Póster publicitario premium de boAt para auriculares inalámbricos",
     description: "Un póster publicitario premium y futurista de boAt en una composición cuadrada 1:1, que presenta un auricular inalámbrico sobre la oreja de alta gama como el producto héroe dominante. El auricular ultra fotorrealista, en grafito y negro con superficies metálicas, flota ligeramente sobre una plataforma negra elegante en un entorno de grafito oscuro con sutiles acentos azul eléctrico. Una tipografía geométrica en negrita que dice 'FEEL THE SOUND' (SIENTE EL SONIDO) está integrada en la composición, parcialmente detrás del auricular. El fondo presenta una arquitectura sonora conceptual. Tipografía técnica adicional destaca características como 'ACTIVE NOISE CANCELLATION' (CANCELACIÓN ACTIVA DE RUIDO) y 'DEEP BASS' (BAJOS PROFUNDOS). El logotipo de boAt está visible en la parte inferior. Iluminación comercial profesional, estética de alta resolución.",
     mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788484856/Gemini_Generated_Image_rck6u9rck6u9rck6.jpg",
