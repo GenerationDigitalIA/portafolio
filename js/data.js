@@ -22,37 +22,6 @@ const portfolioItems = [
   {
     id: "img-1",
     type: "image",
-    title: "El Espíritu del Viaje Americano",
-    description: "Retrato ultra-realista que captura la pura alegría del viaje y la fuerza del viento en carretera abierta.",
-    mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788475671/Gemini_Generated_Image_70rmd570rmd570rm.jpg",
-    prompt: "An ultra-realistic profile portrait of a Golden Retriever in the passenger seat of a car on an interstate highway. The window is fully rolled down, and the dog's face is distorted by sheer joy and the force of the wind, with its tongue lolling out and ears blown back. The focus is sharp on the dog while the rapidly moving surroundings are blurred. Includes subtle background details evoking the United States, such as a pole with an American flag and an \"I-10\" highway sign. Travel photography aesthetic, dramatic natural lighting, high resolution.",
-    model: "Google Imagen 3",
-    tags: ["Fotografía", "Ultra-realismo", "Animales", "Cinemático"],
-    featured: true
-  },
-  {
-    id: "img-2",
-    type: "image",
-    title: "Caos y Lana",
-    description: "Escena íntima de travesura felina envuelta en madejas de lana con iluminación natural cálida.",
-    mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788476529/Gemini_Generated_Image_1g1qrs1g1qrs1g1q.jpg",
-    prompt: "Playful cat tangled in yarn ball while being recorded on smartphone, surrounded by cat toys on rug, warm natural light, shallow depth of field, high detail, cozy aesthetic.",
-    model: "Google Imagen 3",
-    tags: ["Cotidiano", "Gatos", "Iluminación Cálida", "Macro"]
-  },
-  {
-    id: "img-3",
-    type: "image",
-    title: "Órbita Estelar",
-    description: "Composición de astrofotografía cinemática que visualiza satélites modernos sobrevolando la Tierra.",
-    mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788476827/Gemini_Generated_Image_m1w0jnm1w0jnm1w0.jpg",
-    prompt: "Modern scientific satellite orbiting planet Earth with solar panels deployed, Moon visible in distant star-filled deep space, nebula glow, cinematic space photography, realistic earth curvature and atmospheric glow, photorealistic 8k.",
-    model: "Google Imagen 3",
-    tags: ["Espacio", "Astronomía", "Ciencia Ficción", "8K"]
-  },
-  {
-    id: "img-4",
-    type: "image",
     title: "Campaña Publicitaria Minimalista del Apple Watch",
     description: "Una fotografía publicitaria minimalista y de alta gama en estudio que presenta un Apple Watch gigante en posición vertical sobre un suelo brillante y reflectante. Una joven mujer con una sudadera y pantalones de chándal blancos impecables se recuesta casualmente contra el gran reloj con los ojos cerrados. Fondo azul degradado suave con tipografía blanca grande y llamativa detrás. Iluminación de estudio moderna, estética ultra limpia, alta resolución.",
     mediaUrl: "https://res.cloudinary.com/hmmpgzoa/image/upload/v1788483742/Gemini_Generated_Image_8temj48temj48tem.jpg",
@@ -61,7 +30,7 @@ const portfolioItems = [
     tags: ["Publicidad", "Minimalista", "Apple Watch", "Moda", "Estudio", "Fotografía"]
   },
   {
-    id: "img-5",
+    id: "img-2",
     type: "image",
     title: "Póster publicitario premium de boAt para auriculares inalámbricos",
     description: "Un póster publicitario premium y futurista de boAt en una composición cuadrada 1:1, que presenta un auricular inalámbrico sobre la oreja de alta gama como el producto héroe dominante. El auricular ultra fotorrealista, en grafito y negro con superficies metálicas, flota ligeramente sobre una plataforma negra elegante en un entorno de grafito oscuro con sutiles acentos azul eléctrico. Una tipografía geométrica en negrita que dice 'FEEL THE SOUND' (SIENTE EL SONIDO) está integrada en la composición, parcialmente detrás del auricular. El fondo presenta una arquitectura sonora conceptual. Tipografía técnica adicional destaca características como 'ACTIVE NOISE CANCELLATION' (CANCELACIÓN ACTIVA DE RUIDO) y 'DEEP BASS' (BAJOS PROFUNDOS). El logotipo de boAt está visible en la parte inferior. Iluminación comercial profesional, estética de alta resolución.",
