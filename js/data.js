@@ -52,16 +52,6 @@ const portfolioItems = [
   {
     id: "vid-1",
     type: "video",
-    title: "Del Fracaso al Éxito: La Regla de los Ganadores",
-    description: "Animación retro pixel art sobre superación personal, vencer el fracaso y alcanzar la meta.",
-    mediaUrl: "https://www.youtube.com/embed/4KSZEFhdlX4",
-    prompt: "16-bit retro side-scrolling platformer pixel art, hero overcoming dark obstacles and climbing to a sunlit city rooftop to lift a golden trophy, level complete screen.",
-    model: "Google Veo 2.0",
-    tags: ["Pixel Art", "Animación 2D", "Motivación", "Retro Gaming"]
-  },
-  {
-    id: "vid-2",
-    type: "video",
     title: "El Viaje de la Vida: De Niño Soñador a Anciano Sabio",
     description: "Cortometraje animado estilo Studio Ghibli sobre el paso del tiempo, el crecimiento personal y la serenidad de alcanzar la cima.",
     mediaUrl: "https://www.youtube.com/embed/x3AxtZ2BaHE",
