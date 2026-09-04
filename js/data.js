@@ -72,17 +72,17 @@ const portfolioItems = [
   {
     id: "vid-1",
     type: "video",
-    category: "Cortometraje de Animación Cinemática",
-    title: "El Viaje de la Vida: De Niño Soñador a Anciano Sabio",
-    description: "Cortometraje narrativo animado con estética pictórica inspirada en Studio Ghibli y Makoto Shinkai. Explora la evolución humana a través de cuatro estaciones y etapas vitales: niñez en el bosque primaveral, juventud escalando acantilados, madurez entre ruinas bajo la lluvia y vejez serena contemplando el amanecer en la cumbre nevada.",
-    mediaUrl: "https://www.youtube.com/embed/x3AxtZ2BaHE",
-    prompt: "Cinematic anime style, Makoto Shinkai and Studio Ghibli aesthetic. A boy running happily in a spring forest grows into a determined youth climbing cliffs, then an adult running through ancient ruins in the rain, finally reaching old age as a wise bearded wanderer standing peacefully on a snowy mountain summit at sunrise, high emotional resonance, painterly lighting.",
+    category: "Animación Narrativa / Historia y Escenarios Extremos",
+    title: "Tu vida en cada nivel del búnker nuclear subterráneo",
+    description: "Exploración de la jerarquía subterránea tras un apocalipsis nuclear. Describe la supervivencia y división en cuatro niveles bajo tierra: desde la esclusa de descontaminación del Nivel 1 hasta el lujoso santuario de los líderes en el Nivel 4.",
+    mediaUrl: "https://www.youtube.com/embed/8SRFsJkksTg",
+    prompt: "2D cinematic cartoon stick figure style, thick clean black outlines, flat colors with soft shading. A character with an oversized expressive head in a subterranean nuclear bunker progressing through decontamination locks, overcrowded barracks, machine rooms, and luxury suites.",
     model: "Google Veo 2",
     resolution: "4K Cinema (2160p)",
     aspectRatio: "16:9 Widescreen",
     renderPipeline: "Google DeepMind Veo 2 + Consistencia Temporal Multiframe",
     featured: true,
-    tags: ["Anime", "Studio Ghibli", "Reflexión", "Animación 2D", "Filosofía", "Cinematografía", "Narrativa"]
+    tags: ["Búnker", "Animación 2D", "Supervivencia", "Historia Oscura", "Apocalipsis", "Ciencia", "Curiosidades"]
   },
   {
     id: "aud-1",
