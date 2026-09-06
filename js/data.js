@@ -72,17 +72,17 @@ const portfolioItems = [
   {
     id: "vid-1",
     type: "video",
-    category: "Animación Narrativa / Historia y Escenarios Extremos",
-    title: "Tu vida en cada nivel del búnker nuclear subterráneo",
-    description: "Exploración de la jerarquía subterránea tras un apocalipsis nuclear. Describe la supervivencia y división en cuatro niveles bajo tierra: desde la esclusa de descontaminación del Nivel 1 hasta el lujoso santuario de los líderes en el Nivel 4.",
-    mediaUrl: "https://www.youtube.com/embed/8SRFsJkksTg",
-    prompt: "2D cinematic cartoon stick figure style, thick clean black outlines, flat colors with soft shading. A character with an oversized expressive head in a subterranean nuclear bunker progressing through decontamination locks, overcrowded barracks, machine rooms, and luxury suites.",
+    category: "Animación Narrativa / Historia Oscura y Jerarquías Militares",
+    title: "Cada rango de los guerreros espartanos explicado en ocho minutos oscuros",
+    description: "Un recorrido descarnado por la implacable jerarquía militar de Esparta: desde el despiadado filtro infantil en el monte Taigeto y el terror clandestino de la Krypteia, hasta el muro de escudos de la falange hoplita y el sacrificio final de los 300 Hippeis en las Termópilas.",
+    mediaUrl: "https://www.youtube.com/embed/KoS3x5rkaJY",
+    prompt: "2D cinematic cartoon stick figure style, thick clean black outlines, flat colors with soft shading, horizontal 16:9 format. A character with an oversized expressive head (45% of body height), stick-figure limbs, and minimal anatomy progressing through ancient Spartan trials: the frozen rocks of Mount Taygetus, brutal Agoge beatings, covert Krypteia dagger hunts, hoplite phalanx shield walls, and bronze armor of royal Hippeis guards.",
     model: "Google Veo 2",
     resolution: "4K Cinema (2160p)",
     aspectRatio: "16:9 Widescreen",
     renderPipeline: "Google DeepMind Veo 2 + Consistencia Temporal Multiframe",
     featured: true,
-    tags: ["Búnker", "Animación 2D", "Supervivencia", "Historia Oscura", "Apocalipsis", "Ciencia", "Curiosidades"]
+    tags: ["espartanos", "historia", "greciaantigua", "curiosidadeshistoricas", "guerreros", "Animación 2D", "Historia Oscura"]
   },
   {
     id: "aud-1",
